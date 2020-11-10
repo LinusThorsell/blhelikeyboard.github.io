@@ -263,11 +263,16 @@ function AudioSynthView() {
 		
 		switch(e.keyCode) {
 
-			// delete
+			// delete notes
 			case 27:
 				removeNote();
 				break;
-
+			case 46:
+				removeNote();
+				break;
+			case 8:
+				removeNote();
+				break;
 			// left
 			case 37:
 				fnChangeOctave(-1);
